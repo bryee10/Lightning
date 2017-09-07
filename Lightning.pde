@@ -5,12 +5,11 @@ int endY = 150;
 void setup()
 {
   size(600,600);
-  strokeWeight(5);
   background(0,0,0);
 }
 void draw()
 {
-  stroke(((int)(Math.random()*256)),((int)(Math.random()*256)),((int)(Math.random()*256)));
+  stroke(230,230,255);
   while(endX <= 600)
   {
     endX = startX + ((int)(Math.random()*10));
@@ -39,7 +38,7 @@ void hi()
 {
   stroke(0);
   fill(0,0,0,15);
-  rect(0,0,600,600);
+  rect(-10,-10,610,610);
   endX = endX + 20;
   fill(100);
   noStroke();
@@ -47,5 +46,6 @@ void hi()
   ellipse(250,50,300,200);
   ellipse(450,50,300,200);
   ellipse(650,50,300,200);
+  strokeWeight(((int)(Math.random()*5)));
 }
 
